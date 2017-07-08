@@ -3,16 +3,23 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<title>那些年你想吃又吃不到的东西</title>
+
+<title>hungery</title>
 
 <link rel="stylesheet" href="css/animate.css">
 <style>
 * { margin: 0; padding: 0;}
 ul { list-style-type: none;}
-body { font: 14px "Microsoft Yahei"; overflow-x: hidden; background-color: #2B2B2B; }
-h1 { width: 900px; margin: 40px auto 100px; font: 32px "Microsoft Yahei"; text-align: center; color: #D3D3D3; }
+body { font: 14px "Microsoft Yahei"; overflow-x: hidden;background-color: #9E9490;  
+background-image: url(img/bg.jpg);
+ 
+	background-size:100%;
+	background-repeat:no-repeat;
+}
+ h1 { width: 900px; margin: 40px auto 100px; font: 32px "Microsoft Yahei"; text-align:center; color: #D3D3D3; }
 </style>
-
+ 
+ 
 <script src="js/jquery-1.8.3.min.js"></script>
 <script>
 $(function(){
@@ -47,8 +54,69 @@ $(function(){
 
 </head>
 <body>
+  
+<style>
+ .nav ul{
+width:1000px;
+margin:0px auto;
+height:38px;
+padding:0;
+}
+.nav ul li{
+float:left;
+}
+.nav ul li a{
+width:180px;
+height:35px;
+line-height:28px;
+background:black;
+color:#FFF;
+margin:10px 35px;
+font-size:15px;
+display:block;
+text-align:center;
+text-decoration:none;
+}
+ 
+.nav ul li a:hover{
+width:178px;
+height:33px;
+line-height:28px;
+border:1px solid black;
+color:black;
+background:#FFF;
+}
 
-<h1>那些年你想吃又吃不到的东西</h1>
+</style>
+<h1 style="color: #F2ECEC; font-style: italic; font-weight: bolder; font-size: 80px;margin: 150px auto 10px;text-align: left;">Hungery</h1>
+<div class="nav">
+<ul>
+			<li id="home"><a href=""><b>HOW</b></a></li>
+			<li id="single"><a href=""><b>TO</b></a></li>
+			<li id="dropdown"><a href="cart.jsp"><b>BECOME</b></a></li>
+			<li id="dropline"><a href="echarts/index.html"><b>FAT</b></a></li>
+			 
+</ul></div>
+ 
+<script>
+//For Demo only
+var links = document.getElementsByClassName('link')
+for(var i = 0; i <= links.length; i++)
+   addClass(i)
+
+
+function addClass(id){
+   setTimeout(function(){
+      if(id > 0) links[id-1].classList.remove('hover')
+      links[id].classList.add('hover')
+   }, id*750) 
+}
+</script>
+<div style="text-align:center;clear:both">
+<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+<script src="/follow.js" type="text/javascript"></script>
+</div> 
+<body>
 <div class="well">
 	<div class="well-item">
 		<div class="correct"><img  class="" src="img/pro5.jpg" /></div>
@@ -56,7 +124,7 @@ $(function(){
 			<div class="">
 				<div class="opposite-content">
 					<div class="opposite-content-text"><a href="success.jsp?a=1">
-						请我吃鳗鱼饭！
+						哇，鳗鱼饭没有刺哎！
 					</a>
 					</div>
 				</div>
@@ -69,7 +137,8 @@ $(function(){
 			<div class="">
 				<div class="opposite-content">
 					<div class="opposite-content-text"><a href="success.jsp?a=2">
-						请我吃饭团！
+						想和你一起被裹在里面。
+                                                那你先被吃掉好不好。
 					</a>
 					</div>
 				</div>
@@ -82,8 +151,9 @@ $(function(){
 			<div class="">
 				<div class="opposite-content">
 					<div class="opposite-content-text"><a href="success.jsp?a=3">
-                                            请我吃拉面！
-																					</a>
+                                            每一根面都像我对你的思念。
+                                            红烧还是酸菜味啊？
+                                            </a>																</ a>
 					</div>
 				</div>
 			</div>
@@ -95,7 +165,8 @@ $(function(){
 			<div class="">
 				<div class="opposite-content">
 					<div class="opposite-content-text"><a href="success.jsp?a=4">
-						请我吃雪糕！
+						想让你请我吃一辈子雪糕~
+                                             你走开。
 					</a>
 					</div>
 				</div>
@@ -108,7 +179,7 @@ $(function(){
 			<div class="">
 				<div class="opposite-content">
 					<div class="opposite-content-text"><a href="success.jsp?a=5">
-						请我吃鱼蛋！
+						你的嘴角又沾到酱汁啦，傻瓜。
 					</a>
 					</div>
 				</div>
@@ -121,7 +192,8 @@ $(function(){
 			<div class="">
 				<div class="opposite-content">
 					<div class="opposite-content-text"><a href="success.jsp?a=6">
-						请我吃串串！
+						你想当红油里面的脆骨吗？
+                                                不要，辣眼睛。。。
 					</a>
 					</div>
 				</div>
@@ -134,7 +206,7 @@ $(function(){
 			<div class="">
 				<div class="opposite-content">
 					<div class="opposite-content-text"><a href="success.jsp?a=7">
-						请我喝奶茶！
+						来，让我尝一口你的奶茶。
 					</a>
 					</div>
 				</div>
@@ -147,8 +219,7 @@ $(function(){
 			<div class="">
 				<div class="opposite-content">
                                     <div class="opposite-content-text"><a href="success.jsp?a=8">
-
-						请我吃龙虾！
+                                                红虾跑的快还是青虾跑的得快？
                                         </a>
 					</div>
 				</div>
@@ -161,7 +232,7 @@ $(function(){
 			<div class="">
 				<div class="opposite-content">
 					<div class="opposite-content-text"><a href="success.jsp?a=9">
-						请我吃烤鱼！
+						想把所有的鱼肚子都给你吃
 					</a>
 					</div>
 				</div>
@@ -174,7 +245,7 @@ $(function(){
 			<div class="">
 				<div class="opposite-content">
 					<div class="opposite-content-text"><a href="success.jsp?a=10">
-						请我吃火锅！
+						要麻将还是油碟？
 					</a>
 					</div>
 				</div>
@@ -187,7 +258,7 @@ $(function(){
 			<div class="">
 				<div class="opposite-content">
 					<div class="opposite-content-text"><a href="success.jsp?a=11">
-						请我吃披萨!
+						你愿意吃我的披萨边吗？
 					</a>
 					</div>
 				</div>
@@ -200,7 +271,7 @@ $(function(){
 			<div class="">
 				<div class="opposite-content">
 					<div class="opposite-content-text"><a href="success.jsp?a=12">
-						请我吃牛排！
+						来，我帮你切肉，顺便帮你吃了好了。	
 					</a>
 					</div>
 				</div>
