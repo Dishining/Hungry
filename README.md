@@ -1,18 +1,18 @@
 # Hungry
 ## 页面展示
 * enter
-![](https://github.com/JuneRainbow/Hungry/raw/master/web/web2017/img/enter.png)
+![](https://github.com/JuneRainbow/Hungry/raw/master/img/enter.png)
 * 主页
-![](https://github.com/JuneRainbow/Hungry/raw/master/web/web2017/img/index.png)
+![](https://github.com/JuneRainbow/Hungry/raw/master/img/index.png)
 * 加入订单成功页面
-![](https://github.com/JuneRainbow/Hungry/raw/master/web/web2017/img/success.png)
+![](https://github.com/JuneRainbow/Hungry/raw/master/img/success.png)
 * 查看订单页面
-![](https://github.com/JuneRainbow/Hungry/raw/master/web/web2017/img/order1.png)
-![](https://github.com/JuneRainbow/Hungry/raw/master/web/web2017/img/order2.png)
+![](https://github.com/JuneRainbow/Hungry/raw/master/img/order1.png)
+![](https://github.com/JuneRainbow/Hungry/raw/master/img/order2.png)
 * 下单成功页面
-![](https://github.com/JuneRainbow/Hungry/raw/master/web/web2017/img/success1.png)
+![](https://github.com/JuneRainbow/Hungry/raw/master/img/success1.png)
 * echarts页面
-![](https://github.com/JuneRainbow/Hungry/raw/master/web/web2017/img/echarts.png)
+![](https://github.com/JuneRainbow/Hungry/raw/master/img/echarts.png)
 
 ## 架构
 * Web `web2017`
