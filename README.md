@@ -11,23 +11,57 @@
     * `datautil.java`进行数据库的连接以及存取修改操作
 ## 数据库构建
 * USE [hungry]
+```
 GO
+```
+```
 /****** Object:  Table [dbo].[food]    Script Date: 2017/7/9 19:51:21 ******/
+```
+```
 SET ANSI_NULLS ON
+```
+```
 GO
+```
+```
 SET QUOTED_IDENTIFIER ON
+```
+```
 GO
+```
+```
 CREATE TABLE [dbo].[food](
+```
+```
 	[number] [nvarchar](50) NOT NULL,
+	```
+	```
 	[name] [nvarchar](50) NULL,
+	```
+	```
 	[price] [int] NULL,
+	```
+	```
 	[image] [nvarchar](50) NULL,
+	```
+	```
 	[tag] [nchar](10) NULL,
+	```
+	```
  CONSTRAINT [PK_food] PRIMARY KEY CLUSTERED 
+ ```
+ ```
 (
+```
+```
 	[number] ASC
+	```
+	```
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+```
+```
 ) ON [PRIMARY]
-
+```
+```
 GO
-
+```
