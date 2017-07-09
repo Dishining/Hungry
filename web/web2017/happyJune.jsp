@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 
-<title>hungery</title>
+<title>hungry</title>
 
 <link rel="stylesheet" href="css/animate.css">
 <style>
@@ -12,7 +12,7 @@
 ul { list-style-type: none;}
 body { font: 14px "Microsoft Yahei"; overflow-x: hidden;background-color: #9E9490;  
 background-image: url(img/bg.jpg);
- 
+
 	background-size:100%;
 	background-repeat:no-repeat;
 }
@@ -88,12 +88,12 @@ background:#FFF;
 }
 
 </style>
-<h1 style="color: #F2ECEC; font-style: italic; font-weight: bolder; font-size: 80px;margin: 150px auto 10px;text-align: left;">Hungery</h1>
+<h1 style="color: #F2ECEC; font-style: italic; font-weight: bolder; font-size: 80px;margin: 150px auto 10px;text-align: left;">Hungry</h1>
 <div class="nav">
 <ul>
 			<li id="home"><a href=""><b>HOW</b></a></li>
 			<li id="single"><a href=""><b>TO</b></a></li>
-			<li id="dropdown"><a href="cart.jsp"><b>BECOME</b></a></li>
+			<li id="dropdown"><a href="order.jsp"><b>BECOME</b></a></li>
 			<li id="dropline"><a href="echarts/index.html"><b>FAT</b></a></li>
 			 
 </ul></div>

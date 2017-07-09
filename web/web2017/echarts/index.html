@@ -2,13 +2,25 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>ECharts</title>
+    <title>Running</title>
     <!-- 引入 echarts.js -->
     <script src="echarts.js"></script>
 </head>
 <body>
+<style>
+* { margin: 0; padding: 0;}
+ul { list-style-type: none;}
+body { font: 14px "Microsoft Yahei"; overflow-x: hidden;
+background-image: url(bg.jpg);
+
+  background-size:100%;
+  background-repeat:no-repeat;
+}
+ h1 { width: 900px; margin: 40px auto 100px; font: 32px "Microsoft Yahei"; text-align:center; color: #D3D3D3; }
+</style>
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-    <div id="main" style="width: 800px;height:400px;"></div>
+<h1 style="color: #F2ECEC; font-style: italic; font-weight: bolder; font-size: 80px;margin: 250px auto 10px;text-align:center;">吃完这些请自觉绕操场跑</h1>
+    <div id="main" style="width: 800px;height:400px;position: absolute; left: 300px; top: 400px; width: 800px; height: 400px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></div>
      <script type="text/javascript" src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
     <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
@@ -18,13 +30,41 @@
 $.get('newjson1.json').done(function (data) {
     myChart.setOption({
         title: {
-            text: '吃完这些你需要绕操场跑多少圈'
+            text: ''
         },
         tooltip: {},
-        xAxis: {
-            data: ["火锅","烤鱼","串串","鱼蛋","奶茶","龙虾","披萨","牛排","雪糕","鳗鱼饭","拉面","饭团"]
-        },
-        yAxis: {},
+        xAxis: [{
+            data: ["火锅","烤鱼","串串","鱼蛋","奶茶","龙虾","披萨","牛排","雪糕","鳗鱼饭","拉面","饭团"],
+            axisLabel: {
+                                    textStyle: {
+                                        color: '#ffffff',
+                                        fontSize:'13'
+                                    }
+                                },
+             axisLine: {
+                    lineStyle: {
+                        type: 'solid',
+                        color: '#ffffff',//左边线的颜色
+                        width:'2'//坐标线的宽度
+                    }
+                }
+        }],
+        yAxis: {axisLabel: {
+                                textStyle: {
+                                    color: '#ffffff',
+                                    fontSize:'13'
+                                }
+                            },
+                            axisLine: {
+                    lineStyle: {
+                        type: 'solid',
+                        color: '#ffffff',//左边线的颜色
+                        width:'2'//坐标线的宽度
+                    }
+                }
+                        
+            
+            },
         series: [{
             name: '圈数',
             type: 'bar',
