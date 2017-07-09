@@ -10,7 +10,10 @@
 * Java src/..
     * `datautil.java`进行数据库的连接以及存取修改操作
 ## 数据库构建
-* USE [hungry]
+* 数据库管理软件：sql server
+* 脚本代码
+```
+USE [hungry]
 ```
 GO
 ```
